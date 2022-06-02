@@ -1,5 +1,5 @@
-from curses import ALL_MOUSE_EVENTS
-from unicodedata import decomposition
+# from curses import ALL_MOUSE_EVENTS
+# from unicodedata import decomposition
 
 
 class Bank:
