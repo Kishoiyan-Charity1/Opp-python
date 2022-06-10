@@ -23,6 +23,10 @@ class Bank:
             self.balance+=amount
             self.deposits.append(amount)
             return f'you have deposited {amount}, your new balance is {self.balance}'
+
+        def deposits_statement(self):
+            for n in self.deposits:
+                print(f"you have deposited {n} amount of money")
         
         
         
@@ -42,13 +46,17 @@ class Bank:
             self.withdraws.append(amount)
             return f'you have succeful withdrawed {amount}, your new balance is{self.balance}'
 
-      
-    def deposits_statement(self):
-         print(*self.deposits, sep='\n')
-
     def withdraws_statement(self):
-        print(*self.withdraws, sep='\n')
+        for x in self.withdraws:
+            print(f"you have withdrawed {x} amount of money")
+  
 
+    def current_balance(self):
+        current_balance=self.balance
+        print (current_balance)
+        
+      
+    
 
         
 
